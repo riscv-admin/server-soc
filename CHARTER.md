@@ -1,37 +1,13 @@
-# {{ New Group Name }} {{ New Group Type }} Charter
+# RISC-V Server SoC Specification TG Charter 
 
-## Directions for creating a charter
-The information in this file should be created as part of the group formation and approved by your sponsoring group.  See the [Chairs Best Practices policy](https://docs.google.com/document/d/1rtXskVd7YyFq74tQ2OrInyM_-OQa228R5UZs5Pm3Vz0/) for more details.
+The RISC-V Server SoC/SiP specification TG shall define a specification for a standardized set of hardware capabilities that portable system software such as operating systems and hypervisors can rely on being present in a RISC-V server SoC/SiP. The The specification standardizes the requirements for the hardware interfaces and capabilities (e.g., harts, timers, interrupt controllers, PCie root ports, RAS, QOS, in-band management, out-of-band (OOB) management, etc.) provided by the SoC/SiP to software executing at privilege level less than M, and enables OS and hypervisor vendors to support such SoC/SiP with a single binary OS image distribution model.
 
-A good Task Group (TG) charter describes how it achieves filling in a gap defined by the Special Interest Group (SIG) or Committee that spawned it (directly or dotted line). It lists the specific small set of  deliverables it will deliver.
+The specification shall reference the relevant industry standards (e.g., PCIe, CXL, DMTF, etc.) and RISC-V standards (e.g., BRS, ISA profiles) where applicable. Where existing specifications provide options, this specification may impose constraints on those options.
 
-A SIG is an extension of a Committee, in that its only deliverables are strategy, gaps, and prioritizations, and helping spawn other SIGs or TGs to fill the gaps. A good SIG charter spells out the small set of topic areas their strategy will address along with its responsibilities as laid out in this bullet.
+The RISC-V server SoC specification complements the following specifications (among others):
 
-In the next section is a raw template.  Delete the section header and substitute appropriate text in for [ALL CAPS ITEMS AS DESCRIBED].
+ - ISA profiles
+ - Boot and runtime services
+ - Platform security model
 
-**Delete this whole section when done.**
-
-## Raw template
-
-The {{ New Group Name }} {{ New Group Type }} will [OVERALL MISSION STATEMENT in 2-3 
-SENTENCES]
-
-[THIS PARAGRAPH IS OPTIONAL]
-The [TERM 1] IS [DEFINITION 1].  [EXPLANATION  OF IMPORTANCE OF TERM 1]. [MORE TERMS AND DEFINITIONS AS NEEDED]
-
-[BACKGROUND INFORMATION ABOUT RELEVANCE OF GROUP/TECHNOLOGY]
-
-The {{ New Group Name }} {{ New Group Type }} will [DELIVER SOMETHING] [WITH THESE ATTRIBUTES]:
-
- - [ATTRIBUTE 1]
- - [ATTRIBUTE 2]
- - [... AS NEEDED]
-
-[THIS PARAGRAPH AND LIST ARE OPTIONAL, ESPECIALLY IF THE LIST IS EMPTY]
-The following items are presently not planned to be delivered as part of this work, but may be considered in future versions:
-
- 1. [FEATURE 1]
- 1. [FEATURE 2]
- 1. [... AS NEEDED]
-
-To achieve its goals, the {{ New Group Name }} {{ New Group Type }}, will interact with the following groups: [GROUP NAME 1] [GROUP TYPE 1], [GROUP NAME 2] [GROUP TYPE 2], [...] and [GROUP NAME N] [GROUP TYPE N]. 
+This specification shall be a component of a future RISC-V server platform specification along with the ISA profiles, BRS specification, and the platform security model. The TG shall be governed by the SoC infrastructure HC directly and dotted line to the privileged software HC.
